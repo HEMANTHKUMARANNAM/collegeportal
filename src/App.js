@@ -1,9 +1,8 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import Login from './Components/Login'; // Assuming Login is in the same folder
-import Profile from './Components/Profile'; // Import the Profile component
-
+import Login from './Components/Login';
+import Profile from './Components/Profile';
 import './App.css';
 
 const clientId = '233961795977-hhankdead218f4e3usngm999i4jikvva.apps.googleusercontent.com'; // Replace with your actual client ID
