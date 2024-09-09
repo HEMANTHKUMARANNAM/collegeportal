@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/collegeportal/static/css/main.47f44c46.css",
-    "main.js": "/collegeportal/static/js/main.b855f055.js",
+    "main.js": "/collegeportal/static/js/main.461a2a02.js",
     "static/js/453.f7b549c4.chunk.js": "/collegeportal/static/js/453.f7b549c4.chunk.js",
     "static/media/clgbg.jpg": "/collegeportal/static/media/clgbg.e2e1610bd4dcffc14b4f.jpg",
     "index.html": "/collegeportal/index.html",
     "main.47f44c46.css.map": "/collegeportal/static/css/main.47f44c46.css.map",
-    "main.b855f055.js.map": "/collegeportal/static/js/main.b855f055.js.map",
+    "main.461a2a02.js.map": "/collegeportal/static/js/main.461a2a02.js.map",
     "453.f7b549c4.chunk.js.map": "/collegeportal/static/js/453.f7b549c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47f44c46.css",
-    "static/js/main.b855f055.js"
+    "static/js/main.461a2a02.js"
   ]
 }
