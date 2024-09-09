@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center; /* Centering the content */
     padding: 20px;
+    height: max-content;
   }
   
   .personal-details {

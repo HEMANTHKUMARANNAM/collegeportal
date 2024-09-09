@@ -46,6 +46,7 @@ const Login = () => {
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
+  
 };
 
 export default Login;
