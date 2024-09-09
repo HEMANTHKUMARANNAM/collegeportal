@@ -19,12 +19,12 @@ const Attendance = () => {
 
     function convertTimeString(input) {
 
-        if(input=="percentage")
+        if(input==="percentage")
         {
             return input;
         }
          // Split the input string based on ":"
-    let [min, hour, day, month, year] = input.split(":");
+    let [, hour, day, month, year] = input.split(":");
 
     // New time range (hardcoded)
     let newTimeRange = `${hour}:00 - ${parseInt(hour)+1}:00`;
@@ -33,7 +33,7 @@ const Attendance = () => {
     let formattedDate = `${day}:${month}:${year.substring(0,4)}`;
 
     // Combine everything into the new format
-    let output = `${newTimeRange} (${formattedDate}) `;
+    let output = `${formattedDate} (${newTimeRange}) `;
     
     return output;
 
@@ -121,6 +121,11 @@ const Attendance = () => {
     useEffect(() => {
         fetchData();
     }, [email]);
+
+    useEffect(() => {
+        fetchData();
+    }, [email]);
+
 
     return (
         <div>

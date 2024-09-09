@@ -14,6 +14,9 @@ const PersonalDetails = ({ data }) => {
   const email = location.state?.email || localStorage.getItem('userEmail');
   const savedTeacherId = localStorage.getItem('teacherId'); // Retrieve teacherId from localStorage if available
 
+
+  data = data || localStorage.getItem('data');
+
   console.log('Email:', email);
 
   const fetchData = async () => {
