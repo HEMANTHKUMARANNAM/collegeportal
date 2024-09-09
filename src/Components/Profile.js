@@ -18,7 +18,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   // Retrieve email from location state or localStorage
-  const email = location.state?.email || localStorage.getItem('userEmail');
+  const email = location.state?.email ||   localStorage.getItem('userEmail');
 
   useEffect(() => {
     // Store email in localStorage if available in location.state
@@ -32,6 +32,8 @@ const Profile = () => {
     localStorage.removeItem('userEmail');
     navigate('/login');
   };
+
+  
 
   const [datavals, setData] = useState([]);
   const [EMAILdata, setDatamail] = useState('');
@@ -52,6 +54,10 @@ const Profile = () => {
         const persondata = [];
         snapshot.forEach((childSnapshot) => {
           persondata.push({ id: childSnapshot.key, val: childSnapshot.val() });
+          if( childSnapshot.key==="teacher" )
+          {
+            localStorage.setItem("tid",  childSnapshot.val() );
+          }
         });
         setData(persondata);
       } else {

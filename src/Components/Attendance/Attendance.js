@@ -122,10 +122,6 @@ const Attendance = () => {
         fetchData();
     }, [email]);
 
-    useEffect(() => {
-        fetchData();
-    }, [email]);
-
 
     return (
         <div>

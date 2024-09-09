@@ -29,7 +29,7 @@ const PersonalDetails = ({ data }) => {
     console.log('Data:', data);
 
     // Use teacherId from localStorage if it's available, otherwise fetch from data
-    let teacherId = savedTeacherId || data.find(item => item.id === 'teacher')?.val;
+    let teacherId = savedTeacherId || data.find(item => item.id === 'teacher')?.val || localStorage.getItem("tid") ;
 
     if (!teacherId) {
       console.error('No teacher ID found');
