@@ -17,6 +17,31 @@ const Attendance = () => {
     const [table1Data, setTable1Data] = useState([]);
     const [table2Data, setTable2Data] = useState([]);
 
+    function convertTimeString(input) {
+
+        if(input=="percentage")
+        {
+            return input;
+        }
+         // Split the input string based on ":"
+    let [min, hour, day, month, year] = input.split(":");
+
+    // New time range (hardcoded)
+    let newTimeRange = `${hour}:00 - ${parseInt(hour)+1}:00`;
+
+    // Format the date part (day:month:year)
+    let formattedDate = `${day}:${month}:${year.substring(0,4)}`;
+
+    // Combine everything into the new format
+    let output = `${newTimeRange} (${formattedDate}) `;
+    
+    return output;
+
+      }
+      
+      
+      
+
     const fetchData = async () => {
         const db = getDatabase(app);
         let userdata = [];
@@ -112,7 +137,7 @@ const Attendance = () => {
                     {table1Data.map(item => (
                         <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.time}</td>
+                            <td>{convertTimeString(item.time)}</td>
                             <td>{item.attendance}</td>
                         </tr>
                     ))}
@@ -132,7 +157,7 @@ const Attendance = () => {
                     {table2Data.map(item => (
                         <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.time}</td>
+                            <td>{convertTimeString(item.time)}</td>
                             <td>{item.attendance}</td>
                         </tr>
                     ))}
