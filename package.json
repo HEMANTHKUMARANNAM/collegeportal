@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hemanthkumarannam.github.io/collegeportal/",
+  "homepage": "./collegeportal",
   "name": "collegeportal",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-    "firebase": "^10.13.1",
+    "firebase": "^10.13.2",
     "jwt-decode": "^3.1.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
@@ -46,5 +46,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "description": "website link :  https://hemanthkumarannam.github.io/collegeportal/",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
